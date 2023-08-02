@@ -540,7 +540,12 @@ function updateFromParametersInURL() {
         params = null;
       }
     } catch (error) {
-      alert("Invalid URL parameter JSON syntax\n\n" + error + "\n\nRecieved:\n" + paramsJSON);
+      alert(
+        "Invalid URL parameter JSON syntax\n\n" +
+          error +
+          "\n\nRecieved:\n" +
+          paramsJSON
+      );
     }
   }
   params = params || {};
